@@ -20,7 +20,7 @@
               <template v-slot:items="props">
                 <td>{{ props.item.created_at | formatDate }}</td>
                 <td>{{ props.item.data.contact.name }}</td>
-                <td>{{ props.item.data.contact.name }}</td>
+                <td>{{ props.item.data.contact.email }}</td>
                 <td>{{ props.item.data.contact.message }}</td>
               </template>
             </v-data-table>
@@ -84,5 +84,5 @@ export default {
     }
   }
 }
-const SIMPLEFORM_URL = ' https://getsimpleform.com/messages.json?api_token=<api_token>'
+const SIMPLEFORM_URL = 'https://getsimpleform.com/messages.json?api_token=<api_token>'
 </script>
