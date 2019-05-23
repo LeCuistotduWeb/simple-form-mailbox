@@ -7,7 +7,7 @@ This project is developped in vue.js, His serve to read the lecuistotduweb.fr ma
 yarn install
 ```
 
-## Add your Simple Form api_token
+### Add your Simple Form api_token
 In the App.vue file
 ```
 const SIMPLEFORM_URL = ' https://getsimpleform.com/messages.json?api_token=<api_token>'
