@@ -3,14 +3,14 @@
       <TheNavbar/>
     <v-content>
       <v-container>
-        <v-layout class="my-3" align-center justify-center>
-          <v-flex xs10>
+        <v-layout class="my-3" row justify-space-between>
+          <v-flex xs9 sm10 md8 lg8 offset-md1>
             <v-btn @click="loadMails()" color="success" class="ml-0">Boite de reception</v-btn>
-            <v-btn @click="loadSpams()" color="error" class="ml-0">Spam</v-btn>
+            <v-btn @click="loadSpams()" color="error">Spam</v-btn>
           </v-flex>
         </v-layout>
         <v-layout align-center justify-center>
-          <v-flex xs10 center>
+          <v-flex xs12 md10 center>
             <v-data-table
               :headers="headers"
               :items="mails"
@@ -84,5 +84,6 @@ export default {
     }
   }
 }
-const SIMPLEFORM_URL = 'https://getsimpleform.com/messages.json?api_token=<api_token>'
+
+const SIMPLEFORM_URL = 'https://getsimpleform.com/messages.json?api_token=' + process.env.VUE_APP_SIMPLEFORM_TOKEN
 </script>
