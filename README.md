@@ -1,16 +1,21 @@
 # Simple Form Mailbox
 
-This project is developped in vue.js, His serve to read the lecuistotduweb.fr mails send by SimpleForm
+This project is developped width Vue.js, It helps to read the emails send by SimpleForm
 
 ## Project setup
 ```
 yarn install
 ```
 
-### Add your Simple Form api_token
-In the App.vue file
+### Create .env file
+
 ```
-const SIMPLEFORM_URL = ' https://getsimpleform.com/messages.json?api_token=<api_token>'
+.env                # loaded in all cases
+.env.local          # loaded in all cases, ignored by git
+```
+and add your simpleform_token
+```
+VUE_APP_SIMPLEFORM_TOKEN=<api_token>
 ```
 
 ### Compiles and hot-reloads for development
