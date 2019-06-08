@@ -1,6 +1,6 @@
 <template>
   <v-app :dark="dark">
-      <TheNavbar/>
+      <TheNavbar @isDark="dark = !dark"/>
     <v-content>
       <v-container fluid>
         <v-layout class="my-3" row justify-space-between>
@@ -45,7 +45,6 @@
               </template>
             </v-data-table>
             <p>Dernière actualisation: {{ latestUpload }}</p>
-            <v-switch v-model="dark" primary label="Dark" />
           </v-flex>
         </v-layout>
       </v-container>
