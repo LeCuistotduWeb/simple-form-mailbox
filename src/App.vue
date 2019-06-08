@@ -47,7 +47,7 @@ export default {
     return {
       mails: [],
       loading: false,
-      dark: false,
+      dark: true,
       search: '',
       error: null,
       latestUpload: '',
